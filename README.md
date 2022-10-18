@@ -5,7 +5,7 @@
 
 
 
-                https://ecommerce-oguzhanbaysal.netlify.app
+                         https://ecommerce-oguzhanbaysal.netlify.app
 
 
 
