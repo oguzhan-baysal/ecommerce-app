@@ -19,8 +19,6 @@
 * Proje repsonsive yapıdadır. 
 * UI tasarımda: [Chakra UI](https://chakra-ui.com/) ve [Ant Design](https://ant.design/) kullanıldı.
 
-![e-commerce](/public/assets/readme-ss.png)
-![ss-2](https://user-images.githubusercontent.com/92322334/170252640-d943212c-cecd-460b-84c4-44e5761df4e1.png)
-![ss-3](https://user-images.githubusercontent.com/92322334/170252654-18ce9508-163f-40df-b0df-44348725e266.png)
+
 
 
