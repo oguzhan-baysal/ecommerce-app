@@ -1,4 +1,6 @@
 # React-eCommerceApp
+https://ecommerce-oguzhanbaysal.netlify.app
+
 
 
 * ```MockAPI``` ile fake JSON dosyası oluşturularak veriler axios ile çekildi. [https://mockapi.io](https://mockapi.io)
