@@ -1,13 +1,42 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
 import './index.css';
+import './reset.css';
+import 'antd/dist/antd.css' //Ant design
 import App from './App';
+import { ChakraProvider } from '@chakra-ui/react'
+import 'bootstrap/dist/css/bootstrap.min.css';
+import { QueryClient, QueryClientProvider } from 'react-query'
+import { ReactQueryDevtools } from 'react-query/devtools'
 import reportWebVitals from './reportWebVitals';
 
+import { AuthProvider } from './context/AuthContext';
+import { BasketProvider } from './context/BasketContext';
+
+
 const root = ReactDOM.createRoot(document.getElementById('root'));
+const queryClient = new QueryClient({
+  defaultOptions: {
+    queries: {
+      refetchOnMount: false,
+      refetchOnWindowFocus: false
+    }
+  }
+})
+
 root.render(
   <React.StrictMode>
-    <App />
+    <QueryClientProvider client={queryClient}>
+      <ChakraProvider>
+        <AuthProvider>
+          <BasketProvider>
+            <App />
+          </BasketProvider>
+        </AuthProvider>
+      </ChakraProvider>
+
+      <ReactQueryDevtools initialIsOpen={false}></ReactQueryDevtools>
+    </QueryClientProvider>
   </React.StrictMode>
 );
 

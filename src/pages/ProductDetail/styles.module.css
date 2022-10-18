@@ -1,0 +1,25 @@
+.productDetail{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    width: 900px;
+
+}
+
+.productLeft{
+    width: 800px;
+}
+
+.img{
+    max-width: 80%;
+}
+
+.description{
+    margin: 20px 0;
+}
+
+.price{
+    text-align: center;
+}
+
